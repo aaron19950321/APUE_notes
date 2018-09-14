@@ -91,7 +91,7 @@
 
 4. 打开和创建文件的测试。在 `main`函数中调用`test_open_creat()`函数：
 
-	```
+```
 void test_open_creat()
 {
     M_TRACE("---------  Begin test_open_creat()  ---------\n");
@@ -107,7 +107,7 @@ void test_open_creat()
     My_creat("./no_such_file5",S_IRUSR|S_IWUSR); // 一个不存在的文件
     M_TRACE("---------  End test_open_creat()  ---------\n\n");
 }
-	```
+```
   	![open_creat](../imgs/file_IO/open_creat.JPG) 
 
 	可以看到：
@@ -326,7 +326,8 @@ void test_lseek_read_write()
 
 	示例：在 `main`函数中调用 `test_pread_pwrite` 函数：
 
-	```
+
+```
 void test_pread_pwrite()
 {
     M_TRACE("---------  Begin test_pread_pwrite()  ---------\n");
@@ -346,7 +347,7 @@ void test_pread_pwrite()
     close(fd);
     M_TRACE("---------  End test_pread_pwrite()  ---------\n\n");
 }
-	```
+```
  	 ![pread_pwrite](../imgs/file_IO/pread_pwrite.JPG) 
 
 4. `dup/dup2`：复制一个现有的文件描述符：
